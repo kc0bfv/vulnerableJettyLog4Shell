@@ -2,7 +2,7 @@
 
 FROM debian:stable-slim
 
-RUN set -eux; apt-get update; apt-get install -y --no-install-recommends netcat net-tools vim python3 binutils openjdk-11-jre zip unzip
+RUN set -eux; apt-get update; apt-get install -y --no-install-recommends ncat net-tools vim python3 binutils openjdk-11-jre zip unzip
 
 RUN useradd -ms /bin/bash jettyuser
 
