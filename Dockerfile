@@ -31,4 +31,4 @@ COPY build_components/static_content/ jetty-home/static_content/
 EXPOSE 8080
 WORKDIR /home/jettyuser/jetty-home
 ENV JETTY_HOME="/home/jettyuser/jetty-home-11.0.7"
-ENTRYPOINT java -jar $JETTY_HOME/start.jar 2>&1
+ENTRYPOINT java -jar $JETTY_HOME/start.jar -Dcom.sun.jndi.ldap.object.trustURLCodebase=true
